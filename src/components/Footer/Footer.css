@@ -1,0 +1,158 @@
+.footer {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+
+  border-top: 1px solid var(--border);
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr auto;
+  gap: 40px;
+
+  padding: 50px 0;
+}
+
+.footer__brand {
+  max-width: 300px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--white);
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer__logo span {
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 8px;
+
+  color: white;
+
+  background: var(--gradient-main);
+
+  font-size: 0.8rem;
+}
+
+.footer__brand p {
+  margin-top: 15px;
+
+  color: var(--text-muted);
+
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px 25px;
+}
+
+.footer__links a {
+  color: var(--text-secondary);
+
+  font-size: 0.76rem;
+
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: var(--white);
+}
+
+.footer__social {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__social a {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  color: var(--text-secondary);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer__social a:hover {
+  color: var(--white);
+
+  border-color: rgba(139, 92, 246, 0.4);
+
+  transform: translateY(-3px);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--text-muted);
+
+  font-size: 0.7rem;
+}
+
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--text-secondary);
+
+  transition: color 0.2s ease;
+}
+
+.footer__top:hover {
+  color: var(--white);
+}
+
+@media (max-width: 800px) {
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer__social {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    width: min(100% - 32px, 600px);
+  }
+
+  .footer__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

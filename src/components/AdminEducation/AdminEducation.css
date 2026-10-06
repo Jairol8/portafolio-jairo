@@ -1,0 +1,607 @@
+.admin-education {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 40px 0 80px;
+  color: #f5f7fa;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-education__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.admin-education__eyebrow {
+  display: block;
+  margin-bottom: 9px;
+  color: #8f9aaa;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.admin-education__header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+
+.admin-education__header p {
+  max-width: 620px;
+  margin: 14px 0 0;
+  color: #8e98a7;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   NEW BUTTON
+========================================= */
+
+.admin-education__new {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 0 17px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: #f5f7fa;
+  color: #11151a;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-education__new:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================
+   NOTICE
+========================================= */
+
+.admin-education__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 26px;
+  padding: 17px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(255, 255, 255, 0.055),
+      transparent 42%
+    ),
+    rgba(255, 255, 255, 0.025);
+  color: #a5afbd;
+}
+
+.admin-education__notice svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #d9dee5;
+}
+
+.admin-education__notice strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #eef1f5;
+  font-size: 0.82rem;
+}
+
+.admin-education__notice p {
+  margin: 0;
+  color: #7f8998;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.admin-education__form {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 18px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 255, 255, 0.045),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.018)
+    );
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.admin-education__form-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.admin-education__form-header h3 {
+  margin: 0;
+  color: #f2f4f7;
+  font-size: 1.35rem;
+  letter-spacing: -0.025em;
+}
+
+.admin-education__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #8993a2;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-education__close:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.admin-education__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.45fr;
+  gap: 20px;
+}
+
+.admin-education__form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-education__form-grid label > span {
+  color: #aab3c0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.admin-education__form-full {
+  grid-column: 1 / -1;
+}
+
+.admin-education__form-grid input,
+.admin-education__form-grid textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.18);
+  color: #f2f4f7;
+  font-family: inherit;
+  font-size: 0.84rem;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-education__form-grid input {
+  height: 46px;
+  padding: 0 14px;
+}
+
+.admin-education__form-grid textarea {
+  min-height: 125px;
+  padding: 13px 14px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.admin-education__form-grid input::placeholder,
+.admin-education__form-grid textarea::placeholder {
+  color: #555f6d;
+}
+
+.admin-education__form-grid input:focus,
+.admin-education__form-grid textarea:focus {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.035);
+}
+
+/* =========================================
+   FORM MESSAGE
+========================================= */
+
+.admin-education__message {
+  margin-top: 18px;
+  padding: 11px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #c7ced7;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.admin-education__form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.admin-education__cancel,
+.admin-education__save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-education__cancel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: #8993a2;
+}
+
+.admin-education__cancel:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.045);
+  color: #dce1e7;
+}
+
+.admin-education__save {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #f2f4f7;
+  color: #11151a;
+}
+
+.admin-education__save:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+}
+
+/* =========================================
+   LIST
+========================================= */
+
+.admin-education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================================
+   EDUCATION CARD
+========================================= */
+
+.admin-education-card {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 20px;
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.015)
+    );
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.admin-education-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+.admin-education-card.is-hidden {
+  opacity: 0.5;
+}
+
+/* =========================================
+   CARD NUMBER
+========================================= */
+
+.admin-education-card__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #687280;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.admin-education-card__content {
+  min-width: 0;
+}
+
+.admin-education-card__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 9px;
+}
+
+.admin-education-card__meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #7f8998;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.admin-education-card__content h3 {
+  margin: 0;
+  color: #f0f2f5;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.admin-education-card__content h4 {
+  margin: 5px 0 8px;
+  color: #aeb7c3;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.admin-education-card__content p {
+  max-width: 760px;
+  margin: 0;
+  color: #737e8d;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.admin-education-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  color: #8e98a7;
+  font-size: 0.7rem;
+}
+
+.admin-education-card__status svg {
+  color: #aeb7c3;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.admin-education-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-education-card__actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #7f8998;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.admin-education-card__actions button:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e6e9ed;
+}
+
+.admin-education-card__actions button.is-danger:hover {
+  border-color: rgba(255, 100, 100, 0.25);
+  background: rgba(255, 100, 100, 0.07);
+  color: #ff9c9c;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.admin-education__footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: #66717f;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.admin-education__footer svg {
+  flex: 0 0 auto;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .admin-education-card {
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+  }
+
+  .admin-education-card__status {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-education {
+    width: min(100% - 28px, 1180px);
+    padding-top: 28px;
+  }
+
+  .admin-education__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-education__new {
+    width: 100%;
+  }
+
+  .admin-education__form {
+    padding: 20px;
+  }
+
+  .admin-education__form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-education__form-full {
+    grid-column: auto;
+  }
+
+  .admin-education-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .admin-education-card__number {
+    width: 38px;
+    height: 38px;
+  }
+
+  .admin-education-card__actions {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .admin-education__form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .admin-education__cancel,
+  .admin-education__save {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-education__header h2 {
+    font-size: 2rem;
+  }
+
+  .admin-education__form {
+    border-radius: 14px;
+    padding: 17px;
+  }
+
+  .admin-education__notice {
+    padding: 14px;
+  }
+
+  .admin-education-card__content h3 {
+    font-size: 0.92rem;
+  }
+}

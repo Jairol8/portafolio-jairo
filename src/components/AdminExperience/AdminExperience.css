@@ -1,0 +1,618 @@
+.admin-experience {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 40px 0 80px;
+  color: #f5f7fa;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-experience__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.admin-experience__eyebrow {
+  display: block;
+  margin-bottom: 9px;
+  color: #8f9aaa;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.admin-experience__header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+
+.admin-experience__header p {
+  max-width: 620px;
+  margin: 14px 0 0;
+  color: #8e98a7;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.admin-experience__add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 0 17px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: #f5f7fa;
+  color: #11151a;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-experience__add:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.admin-experience__error {
+  margin-bottom: 22px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 100, 100, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 100, 100, 0.045);
+  color: #ffaaaa;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.admin-experience__form {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 18px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 255, 255, 0.045),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.018)
+    );
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.admin-experience__form-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.admin-experience__form-header h2 {
+  margin: 0;
+  color: #f2f4f7;
+  font-size: 1.35rem;
+  letter-spacing: -0.025em;
+}
+
+.admin-experience__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #8993a2;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-experience__close:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.admin-experience__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.45fr;
+  gap: 20px;
+}
+
+.admin-experience__form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-experience__form-grid label > span {
+  color: #aab3c0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.admin-experience__form-full {
+  grid-column: 1 / -1;
+}
+
+.admin-experience__form-grid input,
+.admin-experience__form-grid textarea,
+.admin-experience__form-grid select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.18);
+  color: #f2f4f7;
+  font-family: inherit;
+  font-size: 0.84rem;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-experience__form-grid input,
+.admin-experience__form-grid select {
+  height: 46px;
+  padding: 0 14px;
+}
+
+.admin-experience__form-grid textarea {
+  min-height: 125px;
+  padding: 13px 14px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.admin-experience__form-grid input::placeholder,
+.admin-experience__form-grid textarea::placeholder {
+  color: #555f6d;
+}
+
+.admin-experience__form-grid select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.admin-experience__form-grid select option {
+  background: #171b21;
+  color: #f2f4f7;
+}
+
+.admin-experience__form-grid input:focus,
+.admin-experience__form-grid textarea:focus,
+.admin-experience__form-grid select:focus {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.035);
+}
+
+/* =========================================
+   FORM MESSAGE
+========================================= */
+
+.admin-experience__form-message {
+  margin-top: 18px;
+  padding: 11px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #c7ced7;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.admin-experience__form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.admin-experience__cancel,
+.admin-experience__save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-experience__cancel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: #8993a2;
+}
+
+.admin-experience__cancel:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.045);
+  color: #dce1e7;
+}
+
+.admin-experience__save {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #f2f4f7;
+  color: #11151a;
+}
+
+.admin-experience__save:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+}
+
+.admin-experience__save:disabled,
+.admin-experience__cancel:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* =========================================
+   LIST
+========================================= */
+
+.admin-experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.admin-experience__card {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  align-items: start;
+  gap: 20px;
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.015)
+    );
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.admin-experience__card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+.admin-experience__card--hidden {
+  opacity: 0.5;
+}
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.admin-experience__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #687280;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.admin-experience__content {
+  min-width: 0;
+}
+
+.admin-experience__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-experience__period {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #7f8998;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.admin-experience__content h2 {
+  margin: 9px 0 5px;
+  color: #f0f2f5;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.admin-experience__role {
+  margin: 0;
+  color: #aeb7c3;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.admin-experience__description {
+  max-width: 800px;
+  margin: 10px 0 0;
+  color: #737e8d;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.admin-experience__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  white-space: nowrap;
+  color: #8e98a7;
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+.admin-experience__status.is-visible svg {
+  color: #b9c1cc;
+}
+
+.admin-experience__status.is-hidden {
+  color: #707a88;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.admin-experience__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.admin-experience__actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #7f8998;
+  font-family: inherit;
+  font-size: 0.69rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.admin-experience__actions button:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e6e9ed;
+}
+
+.admin-experience__actions button.is-danger:hover {
+  border-color: rgba(255, 100, 100, 0.25);
+  background: rgba(255, 100, 100, 0.07);
+  color: #ff9c9c;
+}
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.admin-experience__empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 230px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+
+.admin-experience__empty svg {
+  margin-bottom: 12px;
+  color: #707a88;
+}
+
+.admin-experience__empty h2 {
+  margin: 0;
+  color: #e6e9ed;
+  font-size: 1rem;
+}
+
+.admin-experience__empty p {
+  margin: 8px 0 0;
+  color: #707a88;
+  font-size: 0.75rem;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+  .admin-experience__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-experience__add {
+    width: 100%;
+  }
+
+  .admin-experience__form {
+    padding: 22px;
+  }
+
+  .admin-experience__form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-experience__form-full {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-experience {
+    width: min(100% - 28px, 1180px);
+    padding-top: 28px;
+  }
+
+  .admin-experience__form {
+    border-radius: 14px;
+    padding: 18px;
+  }
+
+  .admin-experience__card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .admin-experience__number {
+    width: 38px;
+    height: 38px;
+  }
+
+  .admin-experience__top {
+    flex-direction: column;
+  }
+
+  .admin-experience__status {
+    align-self: flex-start;
+  }
+
+  .admin-experience__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-experience__actions button {
+    width: 100%;
+  }
+
+  .admin-experience__form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .admin-experience__cancel,
+  .admin-experience__save {
+    width: 100%;
+  }
+}
